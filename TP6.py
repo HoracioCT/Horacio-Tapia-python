@@ -106,7 +106,19 @@ print(random.choice(papeles))"""
 """def calcular_dias():
 
     from packs import datetime
-   
+    actual=datetime.datetime.today()
+    fecha_nacimiento=input("Escribe tu fecha de nacimiento YYYY-MM-DD: ")
+    
+    fecha_nacimiento=datetime.datetime.strptime(fecha_nacimiento, '%Y-%m-%d')
+    edad_dias=actual.toordinal() - fecha_nacimiento.toordinal()
+    
+    print(f"Tu edad es de {edad_dias} días")
+
 calcular_dias()"""
+#VERIFICADO
 
 #9. (Opcional) Implemente el programa del ejercicio 6 usando un diccionario.
+
+
+
+
